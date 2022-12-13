@@ -16,6 +16,7 @@ trait CanSendGetRequest
             ...$query,
         ];
         $this->query = []; // reset include, filter, select and page
+
         return $client->get($url, ['query' => $newQuery]);
     }
 }
