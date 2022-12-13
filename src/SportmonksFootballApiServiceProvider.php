@@ -7,13 +7,20 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class SportmonksFootballApiServiceProvider extends PackageServiceProvider
 {
+    public function boot()
+    {
+        $this->app->singleton(
+            abstract: SportmonksFootballApi::class,
+            concrete: fn () => new SportmonksFootballApi(
+                baseUrl: config('sportmonks-football-api.base_url'),
+                apiToken: config('sportmonks-football-api.api_token'),
+                timezone: config('sportmonks-football-api.timezone')
+            ),
+        );
+    }
+
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package
             ->name('sportmonks-football-api')
             ->hasConfigFile();
