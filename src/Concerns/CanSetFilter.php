@@ -2,11 +2,9 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
-
 trait CanSetFilter
 {
-    public function setFilter(string $filter): SportmonksFootballApi
+    public function setFilter(string $filter): static
     {
         $this->query['filter'] = $filter;
 

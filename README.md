@@ -32,26 +32,35 @@ Include
 ```php
 use SportmonksFootballApi;
 
-SportmonksFootballApi::setInclude('league;lineups')->fixture()->all();
+SportmonksFootballApi::fixture()
+	->setInclude('league;lineups')
+	->all();
 ```
 
 Filter
 ```php
 use SportmonksFootballApi;
 
-SportmonksFootballApi::setInclude('events.type')->setFilter('eventTypes:18,14')->fixture()->all();
+SportmonksFootballApi::fixture()
+	->setInclude('events.type')
+	->setFilter('eventTypes:18,14')
+	->all();
 ```
 
 Select
 ```php
 use SportmonksFootballApi;
 
-SportmonksFootballApi::setSelect('name,home_score,away_score')->fixture()->all();
+SportmonksFootballApi::fixture()
+	->setSelect('name,home_score,away_score')
+	->all();
 ```
 
 Page
 ```php
 use SportmonksFootballApi;
 
-SportmonksFootballApi::setPage(2)->fixture()->all();
+SportmonksFootballApi::fixture()
+	->setPage(2)
+	->all();
 ```

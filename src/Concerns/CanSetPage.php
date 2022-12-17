@@ -2,11 +2,9 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
-
 trait CanSetPage
 {
-    public function setPage(int $page): SportmonksFootballApi
+    public function setPage(int $page): static
     {
         $this->query['page'] = $page;
 

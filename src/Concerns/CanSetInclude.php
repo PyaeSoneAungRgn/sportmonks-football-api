@@ -2,14 +2,12 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
-
 trait CanSetInclude
 {
-    public function setInclude(string $include): SportmonksFootballApi
+    public function setInclude(string $include): static
     {
         $this->query['include'] = $include;
-
+        
         return $this;
     }
 }

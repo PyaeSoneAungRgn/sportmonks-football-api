@@ -2,11 +2,9 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
-
 trait CanSetSelect
 {
-    public function setSelect(string $select): SportmonksFootballApi
+    public function setSelect(string $select): static
     {
         $this->query['select'] = $select;
 
