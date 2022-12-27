@@ -26,6 +26,7 @@ class BaseResource
             url: $url,
             query: $this->query
         );
+
         return json_decode($response->getBody()->getContents(), true);
     }
 }

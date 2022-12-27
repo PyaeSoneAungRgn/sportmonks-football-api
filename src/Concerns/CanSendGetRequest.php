@@ -3,11 +3,11 @@
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
 
 trait CanSendGetRequest
 {
-    public function get(Client $client, string $url, array $query = []): Response
+    public function get(Client $client, string $url, array $query = []): ResponseInterface
     {
         return $client->get(
             $url,
@@ -16,7 +16,7 @@ trait CanSendGetRequest
                     'api_token' => $this->apiToken,
                     'timezone' => $this->timezone,
                     ...$query,
-                ]
+                ],
             ]
         );
     }

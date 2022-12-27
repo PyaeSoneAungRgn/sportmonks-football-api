@@ -12,14 +12,14 @@ WIP
 
 ## Basic Usage
 
-Get All Fixtures
+### Get All Fixtures
 ```php
 use SportmonksFootballApi;
 
 SportmonksFootballApi::fixture()->all();
 ```
 
-Get Fixture by ID
+### Get Fixture by ID
 ```php
 use SportmonksFootballApi;
 
@@ -28,7 +28,7 @@ SportmonksFootballApi::fixture()->byId($id);
 
 ## Request options
 
-Include
+### Include
 ```php
 use SportmonksFootballApi;
 
@@ -37,7 +37,7 @@ SportmonksFootballApi::fixture()
 	->all();
 ```
 
-Filter
+### Filter
 ```php
 use SportmonksFootballApi;
 
@@ -47,16 +47,16 @@ SportmonksFootballApi::fixture()
 	->all();
 ```
 
-Select
+### Select
 ```php
 use SportmonksFootballApi;
 
 SportmonksFootballApi::fixture()
-	->setSelect('name,home_score,away_score')
+	->setSelect('name')
 	->all();
 ```
 
-Page
+### Page
 ```php
 use SportmonksFootballApi;
 

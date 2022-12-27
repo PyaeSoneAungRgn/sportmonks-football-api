@@ -55,17 +55,24 @@ class FixtureResource extends BaseResource
         );
     }
 
-    public function bySearchByName(string $search): array
+    public function searchByName(string $search): array
     {
         return $this->get(
             url: "fixtures/search/{$search}"
         );
     }
 
-    public function upcomingByMarketId(int|string $marketId): array
+    public function upcomingByMarketId(int|string $id): array
     {
         return $this->get(
-            url: "fixtures/upcoming/markets/{$marketId}"
+            url: "fixtures/upcoming/markets/{$id}"
+        );
+    }
+
+    public function lastUpdated(): array
+    {
+        return $this->get(
+            url: 'fixtures/latest'
         );
     }
 }
