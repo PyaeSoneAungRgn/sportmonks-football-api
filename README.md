@@ -2,6 +2,10 @@
 
 Laravel package for [Sportmonks Football Api(V3)](https://www.sportmonks.com/football-api-3-0-docs/)
 
+- ⚡️ Simple & Powerful
+- 🤝 Support All Football Endpoints
+- 👨‍💻 Active Development
+
 ## Installation
 
 ```bash
