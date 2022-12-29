@@ -1,10 +1,11 @@
 {
     "name": "pyaesoneaung/sportmonks-football-api",
-    "description": "Sportmonks Football Api(V3) Client for Laravel",
+    "description": "Laravel package for Sportmonks Football Api(V3)",
     "keywords": [
         "pyaesoneaung",
         "laravel",
-        "sportmonks-football-api"
+        "sportmonks-football-api",
+        "sportmonks"
     ],
     "homepage": "https://github.com/pyaesoneaung/sportmonks-football-api",
     "license": "MIT",

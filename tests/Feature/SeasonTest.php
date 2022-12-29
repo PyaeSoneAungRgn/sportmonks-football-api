@@ -9,3 +9,9 @@ it('can get season by id', function () {
         id: 718
     ))->toBeArray();
 });
+
+it('can get season by search by name', function () {
+    expect(football()->season()->searchByName(
+        search: '2022'
+    ))->toBeArray();
+});

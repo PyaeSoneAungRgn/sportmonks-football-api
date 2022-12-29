@@ -15,7 +15,9 @@ it('can get leagues by live', function () {
 });
 
 it('can get leagues by date', function () {
-    expect(football()->league()->byFixtureDate(now()->toDateString()))->toBeArray();
+    expect(football()->league()->byFixtureDate(
+        date: now()->toDateString()
+    ))->toBeArray();
 });
 
 it('can get leagues by country id', function () {

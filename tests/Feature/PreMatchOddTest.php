@@ -24,6 +24,6 @@ it('can get odds by fixture id and market id', function () {
     ))->toBeArray();
 });
 
-// it('can get last updated odds', function () {
-//     expect(football()->preMatchOdd()->lastUpdated())->toBeArray();
-// });
+it('can get last updated odds', function () {
+    expect(football()->preMatchOdd()->lastUpdated())->toBeArray();
+});

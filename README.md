@@ -4,63 +4,56 @@ Laravel package for [Sportmonks Football Api(V3)](https://www.sportmonks.com/foo
 
 ## Installation
 
-WIP
+```bash
+composer require pyaesoneaung/sportmonks-football-api
+```
+
+`.env`
+
+```env
+SPORTMONKS_FOOTBALL_API_TOKEN=Your-Sportmonks-Api-Token
+SPORTMONKS_FOOTBALL_TIMEZONE=Asia/Yangon
+```
 
 ## Documentation
 
-WIP
+📚 Read the full documentation at [sportmonks-football-api.vercel.app](https://sportmonks-football-api.vercel.app)
 
 ## Basic Usage
 
-### Get All Fixtures
+#### Get All Fixtures
 ```php
 use SportmonksFootballApi;
 
 SportmonksFootballApi::fixture()->all();
 ```
 
-### Get Fixture by ID
+#### Get Fixture by ID
 ```php
 use SportmonksFootballApi;
 
 SportmonksFootballApi::fixture()->byId($id);
 ```
 
-## Request options
-
-### Include
-```php
-use SportmonksFootballApi;
-
-SportmonksFootballApi::fixture()
-	->setInclude('league;lineups')
-	->all();
-```
-
-### Filter
-```php
-use SportmonksFootballApi;
-
-SportmonksFootballApi::fixture()
-	->setInclude('events.type')
-	->setFilter('eventTypes:18,14')
-	->all();
-```
-
-### Select
+#### Get All Fixtures With Request Options
 ```php
 use SportmonksFootballApi;
 
 SportmonksFootballApi::fixture()
 	->setSelect('name')
-	->all();
-```
-
-### Page
-```php
-use SportmonksFootballApi;
-
-SportmonksFootballApi::fixture()
+	->setInclude('events.type')
+	->setFilter('eventTypes:18,14')
 	->setPage(2)
 	->all();
+```
+And more...
+
+📚 Checkout the full documentation at [sportmonks-football-api.vercel.app](https://sportmonks-football-api.vercel.app)
+
+## Testing
+
+Edit Sportmonks api token at `tests/Pest.php`
+
+```bash
+composer test
 ```
