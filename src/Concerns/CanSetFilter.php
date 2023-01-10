@@ -6,7 +6,7 @@ trait CanSetFilter
 {
     public function setFilter(string $filter): static
     {
-        $this->query['filter'] = $filter;
+        $this->query['filters'] = $filter;
 
         return $this;
     }
