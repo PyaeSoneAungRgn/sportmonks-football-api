@@ -21,7 +21,7 @@ SPORTMONKS_FOOTBALL_TIMEZONE=Asia/Yangon
 
 ## Documentation
 
-📚 Read the full documentation at [sportmonks-football-api.vercel.app](https://sportmonks-football-api.vercel.app)
+📚 Read the full documentation at [pyaesoneaungrgn.github.io/sportmonks-football-api](https://pyaesoneaungrgn.github.io/sportmonks-football-api)
 
 ## Basic Usage
 
@@ -52,7 +52,7 @@ SportmonksFootballApi::fixture()
 ```
 And more...
 
-📚 Checkout the full documentation at [sportmonks-football-api.vercel.app](https://sportmonks-football-api.vercel.app)
+📚 Checkout the full documentation at [pyaesoneaungrgn.github.io/sportmonks-football-api](https://pyaesoneaungrgn.github.io/sportmonks-football-api)
 
 ## Testing
 
