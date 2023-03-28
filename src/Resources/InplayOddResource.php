@@ -4,7 +4,7 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 class InplayOddResource extends BaseResource
 {
-    public function all(): array
+    public function all(): \stdClass
     {
         return $this->get(
             url: 'odds/inplay'
