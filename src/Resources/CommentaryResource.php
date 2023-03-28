@@ -4,14 +4,14 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 class CommentaryResource extends BaseResource
 {
-    public function all(): array
+    public function all(): \stdClass
     {
         return $this->get(
             url: 'commentaries'
         );
     }
 
-    public function byFixtureId(int|string $id): array
+    public function byFixtureId(int|string $id): \stdClass
     {
         return $this->get(
             url: "commentaries/fixtures/{$id}"
