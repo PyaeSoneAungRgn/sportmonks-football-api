@@ -4,56 +4,56 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 class LeagueResource extends BaseResource
 {
-    public function all(): array
+    public function all(): \stdClass
     {
         return $this->get(
             url: 'leagues'
         );
     }
 
-    public function byId(int|string $id): array
+    public function byId(int|string $id): \stdClass
     {
         return $this->get(
             url: "leagues/{$id}"
         );
     }
 
-    public function byLive(): array
+    public function byLive(): \stdClass
     {
         return $this->get(
             url: 'leagues/live'
         );
     }
 
-    public function byFixtureDate(string $date): array
+    public function byFixtureDate(string $date): \stdClass
     {
         return $this->get(
             url: "leagues/fixtures/date/{$date}"
         );
     }
 
-    public function byCountryId(int|string $id): array
+    public function byCountryId(int|string $id): \stdClass
     {
         return $this->get(
             url: "leagues/countries/{$id}"
         );
     }
 
-    public function searchByName(string $search): array
+    public function searchByName(string $search): \stdClass
     {
         return $this->get(
             url: "leagues/search/{$search}"
         );
     }
 
-    public function allLeaguesByTeamId(int|string $id): array
+    public function allLeaguesByTeamId(int|string $id): \stdClass
     {
         return $this->get(
             url: "leagues/teams/{$id}"
         );
     }
 
-    public function currentLeaguesByTeamId(int|string $id): array
+    public function currentLeaguesByTeamId(int|string $id): \stdClass
     {
         return $this->get(
             url: "leagues/teams/{$id}/current"

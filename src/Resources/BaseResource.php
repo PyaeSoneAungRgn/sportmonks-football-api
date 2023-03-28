@@ -19,7 +19,7 @@ class BaseResource
     ) {
     }
 
-    protected function get(string $url): array
+    protected function get(string $url): \stdClass
     {
         $response = $this->service->get(
             client: $this->service->buildClient(),

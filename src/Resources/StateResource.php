@@ -4,14 +4,14 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 class StateResource extends BaseResource
 {
-    public function all(): array
+    public function all(): \stdClass
     {
         return $this->get(
             url: 'states'
         );
     }
 
-    public function byId(int|string $id): array
+    public function byId(int|string $id): \stdClass
     {
         return $this->get(
             url: "states/{$id}"

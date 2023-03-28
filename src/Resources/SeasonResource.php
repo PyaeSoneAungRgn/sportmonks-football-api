@@ -4,21 +4,21 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 class SeasonResource extends BaseResource
 {
-    public function all(): array
+    public function all(): \stdClass
     {
         return $this->get(
             url: 'seasons'
         );
     }
 
-    public function byId(int|string $id): array
+    public function byId(int|string $id): \stdClass
     {
         return $this->get(
             url: "seasons/{$id}"
         );
     }
 
-    public function searchByName(string $search): array
+    public function searchByName(string $search): \stdClass
     {
         return $this->get(
             url: "seasons/search/{$search}"
