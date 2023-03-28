@@ -1,18 +1,18 @@
 {
-    "name": "pyaesoneaung/sportmonks-football-api",
+    "name": "igorlealantunes/sportmonks-football-api-v3",
     "description": "Laravel package for Sportmonks Football Api(V3)",
     "keywords": [
-        "pyaesoneaung",
+        "igorlealantunes",
         "laravel",
         "sportmonks-football-api",
         "sportmonks"
     ],
-    "homepage": "https://github.com/pyaesoneaung/sportmonks-football-api",
+    "homepage": "https://github.com/igorlealantunes/sportmonks-football-api-v3",
     "license": "MIT",
     "authors": [
         {
-            "name": "Pyae Sone Aung",
-            "email": "pyaesoneaungrgn@gmail.com",
+            "name": "Igor Leal Antunes",
+            "email": "igorlealantunes@gmail.com",
             "role": "Developer"
         }
     ],
@@ -37,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PyaeSoneAung\\SportmonksFootballApi\\": "src"
+            "IgorLealAntunes\\SportmonksFootballApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PyaeSoneAung\\SportmonksFootballApi\\Tests\\": "tests"
+            "IgorLealAntunes\\SportmonksFootballApi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PyaeSoneAung\\SportmonksFootballApi\\SportmonksFootballApiServiceProvider"
+                "IgorLealAntunes\\SportmonksFootballApi\\SportmonksFootballApiServiceProvider"
             ],
             "aliases": {
-                "SportmonksFootballApi": "PyaeSoneAung\\SportmonksFootballApi\\Facades\\SportmonksFootballApi"
+                "SportmonksFootballApi": "IgorLealAntunes\\SportmonksFootballApi\\Facades\\SportmonksFootballApi"
             }
         }
     },
