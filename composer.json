@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "IgorLealAntunes\\SportmonksFootballApiV3\\SportmonksFootballApiServiceProvider"
+                "PyaeSoneAung\\SportmonksFootballApi\\SportmonksFootballApiServiceProvider"
             ],
             "aliases": {
-                "SportmonksFootballApi": "IgorLealAntunes\\SportmonksFootballApiV3\\Facades\\SportmonksFootballApi"
+                "SportmonksFootballApi": "PyaeSoneAung\\SportmonksFootballApi\\Facades\\SportmonksFootballApi"
             }
         }
     },
