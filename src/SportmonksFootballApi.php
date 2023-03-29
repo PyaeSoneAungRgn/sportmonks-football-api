@@ -44,6 +44,15 @@ class SportmonksFootballApi
         }
     }
 
+    public static function make()
+    {
+        return new static(
+            baseUrl: env('SPORTMONKS_FOOTBALL_API_BASE_URL', 'https://api.sportmonks.com/v3/football/'),
+            apiToken: env('SPORTMONKS_FOOTBALL_API_TOKEN'),
+            timezone: env('SPORTMONKS_FOOTBALL_API_TIMEZONE', 'UTC'),
+        );
+    }
+
     public function livescore(): LivescoreResource
     {
         return new LivescoreResource(
