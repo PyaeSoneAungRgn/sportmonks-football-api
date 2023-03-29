@@ -1,9 +1,9 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi\Tests;
+namespace IgorLealAntunes\SportmonksFootballApi\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApiServiceProvider;
+use IgorLealAntunes\SportmonksFootballApi\SportmonksFootballApiServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi\Resources;
+namespace IgorLealAntunes\SportmonksFootballApi\Resources;
 
 class StateResource extends BaseResource
 {

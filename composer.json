@@ -37,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PyaeSoneAung\\SportmonksFootballApi\\": "src"
+            "IgorLealAntunes\\SportmonksFootballApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PyaeSoneAung\\SportmonksFootballApi\\Tests\\": "tests"
+            "IgorLealAntunes\\SportmonksFootballApi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PyaeSoneAung\\SportmonksFootballApi\\SportmonksFootballApiServiceProvider"
+                "IgorLealAntunes\\SportmonksFootballApi\\SportmonksFootballApiServiceProvider"
             ],
             "aliases": {
-                "SportmonksFootballApi": "PyaeSoneAung\\SportmonksFootballApi\\Facades\\SportmonksFootballApi"
+                "SportmonksFootballApi": "IgorLealAntunes\\SportmonksFootballApi\\Facades\\SportmonksFootballApi"
             }
         }
     },

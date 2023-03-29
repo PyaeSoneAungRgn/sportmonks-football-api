@@ -1,34 +1,34 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi;
+namespace IgorLealAntunes\SportmonksFootballApi;
 
-use PyaeSoneAung\SportmonksFootballApi\Concerns\BuildClient;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSendGetRequest;
-use PyaeSoneAung\SportmonksFootballApi\Exceptions\InvalidApiToken;
-use PyaeSoneAung\SportmonksFootballApi\Resources\CoachResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\CommentaryResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\FixtureResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\InplayOddResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\LeagueResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\LivescoreResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\NewsResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\PlayerResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\PredictionResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\PreMatchOddResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\RefereeResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\RivalResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\RoundResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\ScheduleResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\SeasonResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\StageResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\StandingResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\StateResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\TeamResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\TeamSquadResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\TopscorerResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\TransferResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\TvStationResource;
-use PyaeSoneAung\SportmonksFootballApi\Resources\VenueResource;
+use IgorLealAntunes\SportmonksFootballApi\Concerns\BuildClient;
+use IgorLealAntunes\SportmonksFootballApi\Concerns\CanSendGetRequest;
+use IgorLealAntunes\SportmonksFootballApi\Exceptions\InvalidApiToken;
+use IgorLealAntunes\SportmonksFootballApi\Resources\CoachResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\CommentaryResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\FixtureResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\InplayOddResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\LeagueResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\LivescoreResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\NewsResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\PlayerResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\PredictionResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\PreMatchOddResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\RefereeResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\RivalResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\RoundResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\ScheduleResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\SeasonResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\StageResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\StandingResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\StateResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\TeamResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\TeamSquadResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\TopscorerResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\TransferResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\TvStationResource;
+use IgorLealAntunes\SportmonksFootballApi\Resources\VenueResource;
 
 class SportmonksFootballApi
 {

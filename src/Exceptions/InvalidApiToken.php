@@ -1,6 +1,6 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi\Exceptions;
+namespace IgorLealAntunes\SportmonksFootballApi\Exceptions;
 
 use Exception;
 

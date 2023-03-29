@@ -1,16 +1,16 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi\Facades;
+namespace IgorLealAntunes\SportmonksFootballApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi
+ * @see \IgorLealAntunes\SportmonksFootballApi\SportmonksFootballApi
  */
 class SportmonksFootballApi extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi::class;
+        return \IgorLealAntunes\SportmonksFootballApi\SportmonksFootballApi::class;
     }
 }

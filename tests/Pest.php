@@ -1,7 +1,7 @@
 <?php
 
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
-use PyaeSoneAung\SportmonksFootballApi\Tests\TestCase;
+use IgorLealAntunes\SportmonksFootballApi\SportmonksFootballApi;
+use IgorLealAntunes\SportmonksFootballApi\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi\Resources;
+namespace IgorLealAntunes\SportmonksFootballApi\Resources;
 
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetFilter;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetInclude;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetPage;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetSelect;
-use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
+use IgorLealAntunes\SportmonksFootballApi\Concerns\CanSetFilter;
+use IgorLealAntunes\SportmonksFootballApi\Concerns\CanSetInclude;
+use IgorLealAntunes\SportmonksFootballApi\Concerns\CanSetPage;
+use IgorLealAntunes\SportmonksFootballApi\Concerns\CanSetSelect;
+use IgorLealAntunes\SportmonksFootballApi\SportmonksFootballApi;
 
 class BaseResource
 {
