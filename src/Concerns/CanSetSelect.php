@@ -4,9 +4,9 @@ namespace IgorLealAntunes\SportmonksFootballApi\Concerns;
 
 trait CanSetSelect
 {
-    public function setSelect(string $select): static
+    public function setSelect(string ...$select): static
     {
-        $this->query['select'] = $select;
+        $this->query['select'] = implode(';', $select);
 
         return $this;
     }
