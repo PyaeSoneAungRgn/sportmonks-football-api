@@ -31,11 +31,3 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::prediction()->valueBets();
 ```
-
-## GET Value Bets by Fixture ID
-
-```php
-use SportmonksFootballApi;
-
-SportmonksFootballApi::prediction()->valueBetsByFixtureId($fixtureId);
-```

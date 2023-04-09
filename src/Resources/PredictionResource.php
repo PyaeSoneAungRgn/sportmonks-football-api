@@ -31,11 +31,4 @@ class PredictionResource extends BaseResource
             url: 'predictions/value-bets'
         );
     }
-
-    public function valueBetsByFixtureId(int|string $id): array
-    {
-        return $this->get(
-            url: "predictions/value-bets/fixture/{$id}"
-        );
-    }
 }

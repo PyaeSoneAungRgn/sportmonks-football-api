@@ -19,9 +19,3 @@ it('can get probabilities by fixture id', function () {
 it('can get value bets', function () {
     expect(football()->prediction()->valueBets())->toBeArray();
 });
-
-it('can get value bets by fixture id', function () {
-    expect(football()->prediction()->valueBetsByFixtureId(
-        id: 10336114
-    ))->toBeArray();
-});

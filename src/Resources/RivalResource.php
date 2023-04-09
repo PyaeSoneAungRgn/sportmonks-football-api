@@ -10,11 +10,4 @@ class RivalResource extends BaseResource
             url: 'rivals'
         );
     }
-
-    public function byTeamId(int|string $id): array
-    {
-        return $this->get(
-            url: "teams/rivals/{$id}"
-        );
-    }
 }

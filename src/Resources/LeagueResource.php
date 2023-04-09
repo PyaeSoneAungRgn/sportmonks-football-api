@@ -28,7 +28,7 @@ class LeagueResource extends BaseResource
     public function byFixtureDate(string $date): array
     {
         return $this->get(
-            url: "leagues/fixtures/date/{$date}"
+            url: "leagues/date/{$date}"
         );
     }
 
