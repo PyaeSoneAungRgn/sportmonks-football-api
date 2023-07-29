@@ -1,5 +1,9 @@
 # Version History
 
+- 2.0.0
+  - added market endpoints
+  - added bookmaker endpoints
+  - added core endpoints
 - 1.1.0
   - support laravel 10
   - fixed `league()->byFixtureDate()`
