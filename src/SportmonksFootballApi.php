@@ -5,17 +5,23 @@ namespace PyaeSoneAung\SportmonksFootballApi;
 use PyaeSoneAung\SportmonksFootballApi\Concerns\BuildClient;
 use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSendGetRequest;
 use PyaeSoneAung\SportmonksFootballApi\Exceptions\InvalidApiToken;
+use PyaeSoneAung\SportmonksFootballApi\Resources\BookmakerResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\CityResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\CoachResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\CommentaryResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\ContinentResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\CountryResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\FixtureResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\InplayOddResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\LeagueResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\LivescoreResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\MarketResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\NewsResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\PlayerResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\PredictionResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\PreMatchOddResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\RefereeResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\RegionResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\RivalResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\RoundResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\ScheduleResource;
@@ -28,6 +34,7 @@ use PyaeSoneAung\SportmonksFootballApi\Resources\TeamSquadResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TopscorerResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TransferResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TvStationResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\TypeResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\VenueResource;
 
 class SportmonksFootballApi
@@ -208,6 +215,55 @@ class SportmonksFootballApi
     public function transfer(): TransferResource
     {
         return new TransferResource(
+            service: $this,
+        );
+    }
+
+    public function bookmaker(): BookmakerResource
+    {
+        return new BookmakerResource(
+            service: $this,
+        );
+    }
+
+    public function market(): MarketResource
+    {
+        return new MarketResource(
+            service: $this,
+        );
+    }
+
+    public function continent(): ContinentResource
+    {
+        return new ContinentResource(
+            service: $this,
+        );
+    }
+
+    public function country(): CountryResource
+    {
+        return new CountryResource(
+            service: $this,
+        );
+    }
+
+    public function region(): RegionResource
+    {
+        return new RegionResource(
+            service: $this,
+        );
+    }
+
+    public function city(): CityResource
+    {
+        return new CityResource(
+            service: $this,
+        );
+    }
+
+    public function type(): TypeResource
+    {
+        return new TypeResource(
             service: $this,
         );
     }

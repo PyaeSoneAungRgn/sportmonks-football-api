@@ -7,14 +7,14 @@ class FixtureResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'fixtures'
+            url: 'football/fixtures'
         );
     }
 
     public function byId(int|string $id): array
     {
         return $this->get(
-            url: "fixtures/{$id}"
+            url: "football/fixtures/{$id}"
         );
     }
 
@@ -23,56 +23,56 @@ class FixtureResource extends BaseResource
         $ids = implode(',', $ids);
 
         return $this->get(
-            url: "fixtures/multi/{$ids}"
+            url: "football/fixtures/multi/{$ids}"
         );
     }
 
     public function byDate(string $date): array
     {
         return $this->get(
-            url: "fixtures/date/{$date}"
+            url: "football/fixtures/date/{$date}"
         );
     }
 
     public function byDateRange(string $startDate, string $endDate): array
     {
         return $this->get(
-            url: "fixtures/between/{$startDate}/{$endDate}"
+            url: "football/fixtures/between/{$startDate}/{$endDate}"
         );
     }
 
     public function byDateRangeForTeam(string $startDate, string $endDate, int|string $teamId): array
     {
         return $this->get(
-            url: "fixtures/between/{$startDate}/{$endDate}/{$teamId}"
+            url: "football/fixtures/between/{$startDate}/{$endDate}/{$teamId}"
         );
     }
 
     public function byHeadToHead(int|string $teamA, int|string $teamB): array
     {
         return $this->get(
-            url: "fixtures/head-to-head/{$teamA}/{$teamB}"
+            url: "football/fixtures/head-to-head/{$teamA}/{$teamB}"
         );
     }
 
     public function searchByName(string $search): array
     {
         return $this->get(
-            url: "fixtures/search/{$search}"
+            url: "football/fixtures/search/{$search}"
         );
     }
 
     public function upcomingByMarketId(int|string $id): array
     {
         return $this->get(
-            url: "fixtures/upcoming/markets/{$id}"
+            url: "football/fixtures/upcoming/markets/{$id}"
         );
     }
 
     public function lastUpdated(): array
     {
         return $this->get(
-            url: 'fixtures/latest'
+            url: 'football/fixtures/latest'
         );
     }
 }

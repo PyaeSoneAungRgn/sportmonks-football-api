@@ -7,14 +7,14 @@ class StateResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'states'
+            url: 'football/states'
         );
     }
 
     public function byId(int|string $id): array
     {
         return $this->get(
-            url: "states/{$id}"
+            url: "football/states/{$id}"
         );
     }
 }

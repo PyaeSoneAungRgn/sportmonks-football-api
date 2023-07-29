@@ -8,21 +8,21 @@ class TvStationResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'tv-stations'
+            url: 'football/tv-stations'
         );
     }
 
     public function byId(int|string $id): array
     {
         return $this->get(
-            url: "tv-stations/{$id}"
+            url: "football/tv-stations/{$id}"
         );
     }
 
     public function byFixtureId(int|string $id): array
     {
         return $this->get(
-            url: "tv-stations/fixtures/{$id}"
+            url: "football/tv-stations/fixtures/{$id}"
         );
     }
 }

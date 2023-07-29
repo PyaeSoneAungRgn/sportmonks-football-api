@@ -7,14 +7,14 @@ class CommentaryResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'commentaries'
+            url: 'football/commentaries'
         );
     }
 
     public function byFixtureId(int|string $id): array
     {
         return $this->get(
-            url: "commentaries/fixtures/{$id}"
+            url: "football/commentaries/fixtures/{$id}"
         );
     }
 }

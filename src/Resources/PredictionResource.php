@@ -7,28 +7,28 @@ class PredictionResource extends BaseResource
     public function probabilities(): array
     {
         return $this->get(
-            url: 'predictions/probabilities'
+            url: 'football/predictions/probabilities'
         );
     }
 
     public function probabilitiesByLeagueId(int|string $id): array
     {
         return $this->get(
-            url: "predictions/predictability/leagues/{$id}"
+            url: "football/predictions/predictability/leagues/{$id}"
         );
     }
 
     public function probabilitiesByFixtureId(int|string $id): array
     {
         return $this->get(
-            url: "predictions/probabilities/fixtures/{$id}"
+            url: "football/predictions/probabilities/fixtures/{$id}"
         );
     }
 
     public function valueBets(): array
     {
         return $this->get(
-            url: 'predictions/value-bets'
+            url: 'football/predictions/value-bets'
         );
     }
 }

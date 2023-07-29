@@ -7,7 +7,7 @@ class RivalResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'rivals'
+            url: 'football/rivals'
         );
     }
 }

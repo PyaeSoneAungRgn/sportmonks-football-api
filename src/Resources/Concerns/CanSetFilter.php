@@ -1,6 +1,6 @@
 <?php
 
-namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
+namespace PyaeSoneAung\SportmonksFootballApi\Resources\Concerns;
 
 trait CanSetFilter
 {

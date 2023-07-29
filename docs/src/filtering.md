@@ -1,8 +1,8 @@
 # Filtering
 
-## Filter on includes
+[Official Documentation](https://docs.sportmonks.com/football2/api/request-options/filtering)
 
-[Official Documentation](https://docs.sportmonks.com/football2/api/request-options/filtering#filter-on-includes)
+## Filter on includes
 
 ```php
 use SportmonksFootballApi;
@@ -14,8 +14,6 @@ SportmonksFootballApi::fixture()
 ```
 
 ## Filter on multiple includes
-
-[Official Documentation](https://docs.sportmonks.com/football2/api/request-options/filtering#filter-on-multiple-includes)
 
 ```php
 use SportmonksFootballApi;

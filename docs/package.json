@@ -1,0 +1,19 @@
+{
+  "name": "sportmonks-football-api-docs",
+  "version": "0.0.1",
+  "description": "Documentation for Sportmonks Football Api",
+  "main": "index.js",
+  "authors": {
+    "name": "Pyae Sone Aung",
+    "email": "pyaesoneaungrgn@gmail.com"
+  },
+  "repository": "https://github.com/PyaeSoneAungRgn/sportmonks-football-api/sportmonks-football-api-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

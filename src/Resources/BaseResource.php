@@ -2,15 +2,17 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetFilter;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetInclude;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetPage;
-use PyaeSoneAung\SportmonksFootballApi\Concerns\CanSetSelect;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanOrder;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetFilter;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetInclude;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetPage;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetSelect;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\WithQuery;
 use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
 
 class BaseResource
 {
-    use CanSetSelect, CanSetInclude, CanSetFilter, CanSetPage;
+    use CanSetSelect, CanSetInclude, CanSetFilter, CanSetPage, CanOrder, WithQuery;
 
     protected $query = [];
 
@@ -27,6 +29,6 @@ class BaseResource
             query: $this->query
         );
 
-        return json_decode($response->getBody()->getContents(), true);
+        return json_decode((string) $response->getBody(), true);
     }
 }

@@ -8,7 +8,7 @@ use SportmonksFootballApi;
 SportmonksFootballApi::referee()->all();
 ```
 
-## GET Referees by ID
+## GET Referee by ID
 
 ```php
 use SportmonksFootballApi;

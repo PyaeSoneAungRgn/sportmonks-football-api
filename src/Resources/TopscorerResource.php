@@ -7,14 +7,14 @@ class TopscorerResource extends BaseResource
     public function byStageId(int|string $id): array
     {
         return $this->get(
-            url: "topscorers/stages/{$id}"
+            url: "football/topscorers/stages/{$id}"
         );
     }
 
     public function bySeasonId(int|string $id): array
     {
         return $this->get(
-            url: "topscorers/seasons/{$id}"
+            url: "football/topscorers/seasons/{$id}"
         );
     }
 }

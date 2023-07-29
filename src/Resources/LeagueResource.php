@@ -7,56 +7,56 @@ class LeagueResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'leagues'
+            url: 'football/leagues'
         );
     }
 
     public function byId(int|string $id): array
     {
         return $this->get(
-            url: "leagues/{$id}"
+            url: "football/leagues/{$id}"
         );
     }
 
     public function byLive(): array
     {
         return $this->get(
-            url: 'leagues/live'
+            url: 'football/leagues/live'
         );
     }
 
     public function byFixtureDate(string $date): array
     {
         return $this->get(
-            url: "leagues/date/{$date}"
+            url: "football/leagues/date/{$date}"
         );
     }
 
     public function byCountryId(int|string $id): array
     {
         return $this->get(
-            url: "leagues/countries/{$id}"
+            url: "football/leagues/countries/{$id}"
         );
     }
 
     public function searchByName(string $search): array
     {
         return $this->get(
-            url: "leagues/search/{$search}"
+            url: "football/leagues/search/{$search}"
         );
     }
 
     public function allLeaguesByTeamId(int|string $id): array
     {
         return $this->get(
-            url: "leagues/teams/{$id}"
+            url: "football/leagues/teams/{$id}"
         );
     }
 
     public function currentLeaguesByTeamId(int|string $id): array
     {
         return $this->get(
-            url: "leagues/teams/{$id}/current"
+            url: "football/leagues/teams/{$id}/current"
         );
     }
 }

@@ -7,42 +7,42 @@ class TransferResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'transfers'
+            url: 'football/transfers'
         );
     }
 
     public function byId(int|string $id): array
     {
         return $this->get(
-            url: "transfers/{$id}"
+            url: "football/transfers/{$id}"
         );
     }
 
     public function latestTransfers(): array
     {
         return $this->get(
-            url: 'transfers/latest'
+            url: 'football/transfers/latest'
         );
     }
 
     public function betweenDateRange(string $startDate, string $endDate): array
     {
         return $this->get(
-            url: "transfers/between/{$startDate}/{$endDate}"
+            url: "football/transfers/between/{$startDate}/{$endDate}"
         );
     }
 
     public function byTeamId(int|string $id): array
     {
         return $this->get(
-            url: "transfers/teams/{$id}"
+            url: "football/transfers/teams/{$id}"
         );
     }
 
     public function byPlayerId(int|string $id): array
     {
         return $this->get(
-            url: "transfers/players/{$id}"
+            url: "football/transfers/players/{$id}"
         );
     }
 }
