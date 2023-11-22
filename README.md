@@ -1,6 +1,6 @@
 # Sportmonks Football Api
 
-Laravel package for [Sportmonks Football Api(V3)](https://docs.sportmonks.com/football/welcome/getting-started)
+Laravel package for Sportmonks Football Api(V3)
 
 ## Installation
 
@@ -17,7 +17,7 @@ SPORTMONKS_FOOTBALL_TIMEZONE=Asia/Yangon
 
 ## Documentation
 
-📚 Read the full documentation at [sportmonks-football-api.vercel.app](https://sportmonks-football-api.vercel.app/)
+📚 Read the full documentation at [sportmonks-football-api.pyaesoneaung.dev](https://sportmonks-football-api.pyaesoneaung.dev)
 
 ## Basic Usage
 
@@ -48,7 +48,7 @@ SportmonksFootballApi::fixture()
 ```
 And more...
 
-📚 Checkout the full documentation at [sportmonks-football-api.vercel.app](https://sportmonks-football-api.vercel.app/)
+📚 Checkout the full documentation at [sportmonks-football-api.pyaesoneaung.dev](https://sportmonks-football-api.pyaesoneaung.dev)
 
 ## Testing
 
