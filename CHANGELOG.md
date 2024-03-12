@@ -2,6 +2,10 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v2.1.0 - 2024-03-12
+
+- Support Laravel 11
+
 ## v2.0.0 - 2023-07-29
 
 - added market endpoints
