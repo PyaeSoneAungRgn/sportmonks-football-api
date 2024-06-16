@@ -1,5 +1,7 @@
 # Version History
 
+- 2.1.0
+  - support laravel 11
 - 2.0.0
   - added market endpoints
   - added bookmaker endpoints
