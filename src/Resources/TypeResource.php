@@ -7,14 +7,14 @@ class TypeResource extends BaseResource
     public function all(): array
     {
         return $this->get(
-            url: 'core/regions'
+            url: 'core/types'
         );
     }
 
     public function byId(int|string $id): array
     {
         return $this->get(
-            url: "core/regions/{$id}"
+            url: "core/types/{$id}"
         );
     }
 
