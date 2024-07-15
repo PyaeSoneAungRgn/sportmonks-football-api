@@ -4,6 +4,4 @@ namespace PyaeSoneAung\SportmonksFootballApi\Exceptions;
 
 use Exception;
 
-class InvalidApiToken extends Exception
-{
-}
+class InvalidApiToken extends Exception {}

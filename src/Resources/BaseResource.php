@@ -12,14 +12,13 @@ use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
 
 class BaseResource
 {
-    use CanSetSelect, CanSetInclude, CanSetFilter, CanSetPage, CanOrder, WithQuery;
+    use CanOrder, CanSetFilter, CanSetInclude, CanSetPage, CanSetSelect, WithQuery;
 
     protected $query = [];
 
     public function __construct(
         protected readonly SportmonksFootballApi $service,
-    ) {
-    }
+    ) {}
 
     protected function get(string $url): array
     {
