@@ -15,3 +15,11 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::teamSquad()->byTeamIdAndSeasonId($teamId, $seasonId);
 ```
+
+## GET Extended Team Squads by Team ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::teamSquad()->extendedByTeamId($teamId);
+```
