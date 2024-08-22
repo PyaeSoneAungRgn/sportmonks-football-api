@@ -12,3 +12,9 @@ it('can get team squads by team id and season id', function () {
         seasonId: 718
     ))->toBeArray();
 });
+
+it('can get extended team squads by team id', function () {
+    expect(football()->teamSquad()->extendedByTeamId(
+        teamId: 1
+    ))->toBeArray();
+});

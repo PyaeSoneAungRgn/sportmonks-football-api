@@ -17,4 +17,11 @@ class TeamSquadResource extends BaseResource
             url: "football/squads/seasons/{$seasonId}/teams/{$teamId}"
         );
     }
+
+    public function extendedByTeamId(int|string $teamId): array
+    {
+        return $this->get(
+            url: "football/squads/teams/{$teamId}/extended"
+        );
+    }
 }
