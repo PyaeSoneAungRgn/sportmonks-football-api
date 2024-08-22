@@ -2,6 +2,18 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v2.1.2 - 2024-08-22
+
+### What's Changed
+
+* Adds extended team squads by @joshembling in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/19
+
+### New Contributors
+
+* @joshembling made their first contribution in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/19
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v2.1.1...v2.1.2
+
 ## v2.1.1 - 2024-07-15
 
 ### What's Changed
