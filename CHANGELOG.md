@@ -2,6 +2,15 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v2.2.0 - 2025-02-24
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/20
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/21
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v2.1.2...v2.2.0
+
 ## v2.1.2 - 2024-08-22
 
 ### What's Changed
