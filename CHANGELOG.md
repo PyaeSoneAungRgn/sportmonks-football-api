@@ -2,6 +2,14 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v3.0.0 - 2025-05-26
+
+### What's Changed
+
+* feat: array, [collection](https://laravel.com/docs/12.x/collections) and [response](https://laravel.com/docs/12.x/http-client#making-requests) return type by @PyaeSoneAungRgn in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/23
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v2.2.0...v3.0.0
+
 ## v2.2.0 - 2025-02-24
 
 ### What's Changed
