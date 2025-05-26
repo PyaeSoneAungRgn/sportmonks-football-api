@@ -1,17 +1,17 @@
 <?php
 
 it('can get all regions', function () {
-    expect(football()->region()->all())->toBeArray();
+    expect(football()->region()->all())->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
 
 it('can get region by id', function () {
     expect(football()->region()->byId(
         id: 1
-    ))->toBeArray();
+    ))->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
 
 it('can search regions', function () {
     expect(football()->region()->search(
         name: 'bet'
-    ))->toBeArray();
+    ))->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });

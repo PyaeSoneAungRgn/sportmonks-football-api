@@ -1,27 +1,27 @@
 <?php
 
 it('can get all coaches', function () {
-    expect(football()->coach()->all())->toBeArray();
+    expect(football()->coach()->all())->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
 
 it('can get coach by id', function () {
     expect(football()->coach()->byId(
         id: 324
-    ))->toBeArray();
+    ))->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
 
 it('can get coaches by country id', function () {
     expect(football()->coach()->byCountryId(
         id: 1
-    ))->toBeArray();
+    ))->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
 
 it('can get coaches by search by name', function () {
     expect(football()->coach()->searchByName(
         search: 'Messi'
-    ))->toBeArray();
+    ))->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
 
 it('can get last updated coaches', function () {
-    expect(football()->coach()->lastUpdated())->toBeArray();
+    expect(football()->coach()->lastUpdated())->toBeInstanceOf(\Illuminate\Http\Client\Response::class);
 });
