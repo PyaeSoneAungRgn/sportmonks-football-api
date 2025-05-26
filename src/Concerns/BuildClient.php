@@ -2,17 +2,16 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
-use GuzzleHttp\Client;
+use Illuminate\Http\Client\PendingRequest;
+use Illuminate\Support\Facades\Http;
 
 trait BuildClient
 {
-    public function buildClient(): Client
+    public function buildClient(): PendingRequest
     {
-        return new Client([
-            'base_uri' => $this->baseUrl,
-            'headers' => [
+        return Http::baseUrl($this->baseUrl)
+            ->withHeaders([
                 'Accept' => 'application/json',
-            ],
-        ]);
+            ]);
     }
 }

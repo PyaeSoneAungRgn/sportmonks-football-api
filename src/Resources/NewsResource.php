@@ -2,23 +2,26 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
+use Illuminate\Http\Client\Response;
+use Illuminate\Support\Collection;
+
 class NewsResource extends BaseResource
 {
-    public function preMatchNews(): array
+    public function preMatchNews(): array|Collection|Response
     {
         return $this->get(
             url: 'football/news/pre-match'
         );
     }
 
-    public function preMatchNewsBySeasonId(int|string $id): array
+    public function preMatchNewsBySeasonId(int|string $id): array|Collection|Response
     {
         return $this->get(
             url: "football/news/pre-match/seasons/{$id}"
         );
     }
 
-    public function preMatchNewsForUpcomingFixtures(): array
+    public function preMatchNewsForUpcomingFixtures(): array|Collection|Response
     {
         return $this->get(
             url: 'football/news/pre-match/upcoming'

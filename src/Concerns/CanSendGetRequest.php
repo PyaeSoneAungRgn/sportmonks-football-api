@@ -2,21 +2,19 @@
 
 namespace PyaeSoneAung\SportmonksFootballApi\Concerns;
 
-use GuzzleHttp\Client;
-use Psr\Http\Message\ResponseInterface;
+use Illuminate\Http\Client\PendingRequest;
+use Illuminate\Http\Client\Response;
 
 trait CanSendGetRequest
 {
-    public function get(Client $client, string $url, array $query = []): ResponseInterface
+    public function get(PendingRequest $client, string $url, array $query = []): Response
     {
         return $client->get(
             $url,
             [
-                'query' => [
-                    'api_token' => $this->apiToken,
-                    'timezone' => $this->timezone,
-                    ...$query,
-                ],
+                'api_token' => $this->apiToken,
+                'timezone' => $this->timezone,
+                ...$query,
             ]
         );
     }

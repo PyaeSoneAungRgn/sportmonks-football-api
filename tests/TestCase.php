@@ -19,5 +19,8 @@ class TestCase extends Orchestra
         ];
     }
 
-    public function getEnvironmentSetUp($app) {}
+    public function getEnvironmentSetUp($app)
+    {
+        config()->set('sportmonks-football-api.return_type', 'response');
+    }
 }

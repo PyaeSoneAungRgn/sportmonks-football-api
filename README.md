@@ -52,8 +52,6 @@ And more...
 
 ## Testing
 
-Edit Sportmonks api token at `tests/Pest.php`
-
 ```bash
 composer test
 ```
