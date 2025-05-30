@@ -45,7 +45,7 @@ class GetLeagueCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'football:get-league {--queue=sync}';
+    protected $signature = 'football:get-league {--queue=default}';
 
     /**
      * The console command description.
