@@ -2,6 +2,14 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v3.1.0 - 2025-05-30
+
+### What's Changed
+
+* feat: [Response Dto](https://sportmonks-football-api.pyaesoneaung.dev/response-dto.html) by @PyaeSoneAungRgn in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/25
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v3.0.0...v3.1.0
+
 ## v3.0.0 - 2025-05-26
 
 ### What's Changed
