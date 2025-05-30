@@ -45,7 +45,7 @@ class GetLeagueCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'football:get-league {--queue=default}';
+    protected $signature = 'football:get-league {--connection=sync} {--queue=default}';
 
     /**
      * The console command description.
@@ -59,6 +59,7 @@ class GetLeagueCommand extends Command
      */
     public function handle()
     {
+        $connection = $this->option('connection');
         $queue = $this->option('queue');
 
         $page = 1;
@@ -67,11 +68,13 @@ class GetLeagueCommand extends Command
             $this->info("Fetching League... Page: {$page}");
 
             $leagues = SportmonksFootballApi::league()
+                ->setPerPage(50)
                 ->setPage($page)
                 ->all();
 
-            $this->withProgressBar($leagues->collect('data'), function (array $league) use ($queue) {
+            $this->withProgressBar($leagues->collect('data'), function (array $league) use ($queue, $connection) {
                 dispatch(fn () => app(CreateLeagueAction::class)->execute($league))
+                    ->onConnection($connection)
                     ->onQueue($queue)
                     ->name("Update League: {$league['name']}");
             });
