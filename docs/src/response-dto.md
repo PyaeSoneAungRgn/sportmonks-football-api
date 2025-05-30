@@ -1,6 +1,6 @@
 # Response Dto
 
-## Update SPORTMONKS_FOOTBALL_RETURN_TYPE at .env
+## Update .env
 
 ```bash
 SPORTMONKS_FOOTBALL_RETURN_TYPE=dto
