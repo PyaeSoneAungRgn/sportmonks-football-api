@@ -8,7 +8,6 @@ use PyaeSoneAung\SportmonksFootballApi\DTO\ResponseDto;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanOrder;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetFilter;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetInclude;
-use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetOrder;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetPage;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetPerPage;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetSelect;
@@ -18,7 +17,7 @@ use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
 
 class BaseResource
 {
-    use CanOrder, CanSetFilter, CanSetInclude, CanSetPage, CanSetSelect, WithQuery, CanSetPerPage, CanSetSortBy;
+    use CanOrder, CanSetFilter, CanSetInclude, CanSetPage, CanSetPerPage, CanSetSelect, CanSetSortBy, WithQuery;
 
     protected $query = [];
 

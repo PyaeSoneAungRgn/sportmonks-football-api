@@ -9,8 +9,7 @@ class ResponseDto
 {
     public function __construct(
         private Response $response
-    ) {
-    }
+    ) {}
 
     public function response(): Response
     {
