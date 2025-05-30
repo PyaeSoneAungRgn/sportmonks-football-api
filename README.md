@@ -13,6 +13,7 @@ composer require pyaesoneaung/sportmonks-football-api
 ```env
 SPORTMONKS_FOOTBALL_API_TOKEN=Your-Sportmonks-Api-Token
 SPORTMONKS_FOOTBALL_TIMEZONE=Asia/Yangon
+SPORTMONKS_FOOTBALL_RETURN_TYPE=dto
 ```
 
 ## Documentation
@@ -43,6 +44,9 @@ SportmonksFootballApi::fixture()
 	->setSelect('name')
 	->setInclude('events.type')
 	->setFilter('eventTypes:18,14')
+	->setSortBy('starting_at')
+	->orderByDesc()
+	->setPerPage(25)
 	->setPage(2)
 	->all();
 ```
