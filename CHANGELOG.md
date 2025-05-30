@@ -2,6 +2,10 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v3.1.1 - 2025-05-30
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v3.1.0...v3.1.1
+
 ## v3.1.0 - 2025-05-30
 
 ### What's Changed
