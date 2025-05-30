@@ -4,24 +4,25 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Collection;
+use PyaeSoneAung\SportmonksFootballApi\DTO\ResponseDto;
 
 class FixtureResource extends BaseResource
 {
-    public function all(): array|Collection|Response
+    public function all(): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: 'football/fixtures'
         );
     }
 
-    public function byId(int|string $id): array|Collection|Response
+    public function byId(int|string $id): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/{$id}"
         );
     }
 
-    public function byMultipleIds(array $ids): array|Collection|Response
+    public function byMultipleIds(array $ids): array|Collection|Response|ResponseDto
     {
         $ids = implode(',', $ids);
 
@@ -30,49 +31,49 @@ class FixtureResource extends BaseResource
         );
     }
 
-    public function byDate(string $date): array|Collection|Response
+    public function byDate(string $date): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/date/{$date}"
         );
     }
 
-    public function byDateRange(string $startDate, string $endDate): array|Collection|Response
+    public function byDateRange(string $startDate, string $endDate): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/between/{$startDate}/{$endDate}"
         );
     }
 
-    public function byDateRangeForTeam(string $startDate, string $endDate, int|string $teamId): array|Collection|Response
+    public function byDateRangeForTeam(string $startDate, string $endDate, int|string $teamId): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/between/{$startDate}/{$endDate}/{$teamId}"
         );
     }
 
-    public function byHeadToHead(int|string $teamA, int|string $teamB): array|Collection|Response
+    public function byHeadToHead(int|string $teamA, int|string $teamB): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/head-to-head/{$teamA}/{$teamB}"
         );
     }
 
-    public function searchByName(string $search): array|Collection|Response
+    public function searchByName(string $search): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/search/{$search}"
         );
     }
 
-    public function upcomingByMarketId(int|string $id): array|Collection|Response
+    public function upcomingByMarketId(int|string $id): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/fixtures/upcoming/markets/{$id}"
         );
     }
 
-    public function lastUpdated(): array|Collection|Response
+    public function lastUpdated(): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: 'football/fixtures/latest'

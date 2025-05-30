@@ -61,6 +61,13 @@ module.exports = {
             '',
           ]
         },
+          {
+              title: 'Response Dto',
+              collapsable: false,
+              children: [
+                  'response-dto',
+              ]
+          },
         {
           title: 'Request options',
           collapsable: false,

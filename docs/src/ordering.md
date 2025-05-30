@@ -21,3 +21,14 @@ SportmonksFootballApi::fixture()
 	->orderDesc()
 	->all();
 ```
+
+## Sort By
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::fixture()
+    ->sortBy('starting_at')
+	->orderDesc()
+	->all();
+```
