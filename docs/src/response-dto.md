@@ -6,7 +6,7 @@
 SPORTMONKS_FOOTBALL_RETURN_TYPE=dto
 ```
 
-## Available Method
+## Available Methods
 
 ```php
 use SportmonksFootballApi;
