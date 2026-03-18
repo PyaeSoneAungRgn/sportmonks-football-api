@@ -11,8 +11,7 @@ trait BuildClient
     {
         return Http::baseUrl($this->baseUrl)
             ->withHeaders([
-                'Accept' => 'application/json',
-                'Accept-Encoding' => 'identity',
+                'Accept' => 'application/json'
             ]);
     }
 }
