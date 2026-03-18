@@ -2,6 +2,24 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v3.2.1 - 2026-03-18
+
+### What's Changed
+
+* build(deps): bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/27
+* build(deps): bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/31
+* Dev by @kamil-michalak in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/33
+* add: laravel 13 test by @PyaeSoneAungRgn in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/34
+* build(deps): bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/32
+* build(deps): bump stefanzweifel/git-auto-commit-action from 5 to 7 by @dependabot[bot] in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/29
+* build(deps): bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/30
+
+### New Contributors
+
+* @kamil-michalak made their first contribution in https://github.com/PyaeSoneAungRgn/sportmonks-football-api/pull/33
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v3.1.1...v3.2.1
+
 ## v3.1.1 - 2025-05-30
 
 **Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v3.1.0...v3.1.1
