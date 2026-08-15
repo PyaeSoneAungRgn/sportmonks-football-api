@@ -28,4 +28,18 @@ class NewsResource extends BaseResource
             url: 'football/news/pre-match/upcoming'
         );
     }
+
+    public function postMatchNews(): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: 'football/news/post-match'
+        );
+    }
+
+    public function postMatchNewsBySeasonId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/news/post-match/seasons/{$id}"
+        );
+    }
 }

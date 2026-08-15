@@ -35,4 +35,18 @@ class BookmakerResource extends BaseResource
             url: "odds/bookmakers/fixtures/{$id}"
         );
     }
+
+    public function premium(): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: 'odds/bookmakers/premium'
+        );
+    }
+
+    public function matchIdMappingsByFixtureId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "odds/bookmakers/fixtures/{$id}/mapping"
+        );
+    }
 }

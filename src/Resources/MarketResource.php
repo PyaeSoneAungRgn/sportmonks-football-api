@@ -28,4 +28,11 @@ class MarketResource extends BaseResource
             url: "odds/markets/search/{$name}"
         );
     }
+
+    public function premium(): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: 'odds/markets/premium'
+        );
+    }
 }

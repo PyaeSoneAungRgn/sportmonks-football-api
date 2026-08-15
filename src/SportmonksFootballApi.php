@@ -11,15 +11,21 @@ use PyaeSoneAung\SportmonksFootballApi\Resources\CoachResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\CommentaryResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\ContinentResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\CountryResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\ExpectedResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\FilterResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\FixtureResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\InplayOddResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\LeagueResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\LivescoreResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\MarketResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\MatchFactResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\MyResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\NewsResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\PlayerResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\PredictionResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\PreMatchOddResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\PremiumExpectedLineupResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\PremiumOddResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\RefereeResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\RegionResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\RivalResource;
@@ -29,10 +35,15 @@ use PyaeSoneAung\SportmonksFootballApi\Resources\SeasonResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\StageResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\StandingResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\StateResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\StatisticsResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\TeamOfTheWeekResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\TeamRankingResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TeamResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TeamSquadResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\TimezoneResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TopscorerResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TransferResource;
+use PyaeSoneAung\SportmonksFootballApi\Resources\TransferRumourResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TvStationResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\TypeResource;
 use PyaeSoneAung\SportmonksFootballApi\Resources\VenueResource;
@@ -264,6 +275,83 @@ class SportmonksFootballApi
     public function type(): TypeResource
     {
         return new TypeResource(
+            service: $this,
+        );
+    }
+
+    public function statistics(): StatisticsResource
+    {
+        return new StatisticsResource(
+            service: $this,
+        );
+    }
+
+    public function transferRumour(): TransferRumourResource
+    {
+        return new TransferRumourResource(
+            service: $this,
+        );
+    }
+
+    public function matchFact(): MatchFactResource
+    {
+        return new MatchFactResource(
+            service: $this,
+        );
+    }
+
+    public function teamRanking(): TeamRankingResource
+    {
+        return new TeamRankingResource(
+            service: $this,
+        );
+    }
+
+    public function teamOfTheWeek(): TeamOfTheWeekResource
+    {
+        return new TeamOfTheWeekResource(
+            service: $this,
+        );
+    }
+
+    public function expected(): ExpectedResource
+    {
+        return new ExpectedResource(
+            service: $this,
+        );
+    }
+
+    public function premiumExpectedLineup(): PremiumExpectedLineupResource
+    {
+        return new PremiumExpectedLineupResource(
+            service: $this,
+        );
+    }
+
+    public function premiumOdd(): PremiumOddResource
+    {
+        return new PremiumOddResource(
+            service: $this,
+        );
+    }
+
+    public function filter(): FilterResource
+    {
+        return new FilterResource(
+            service: $this,
+        );
+    }
+
+    public function timezone(): TimezoneResource
+    {
+        return new TimezoneResource(
+            service: $this,
+        );
+    }
+
+    public function my(): MyResource
+    {
+        return new MyResource(
             service: $this,
         );
     }

@@ -61,3 +61,15 @@ it('can get upcoming fixtures by market id', function () {
 it('can get latest updated fixtures', function () {
     expect(football()->fixture()->lastUpdated())->toBeInstanceOf(Response::class);
 });
+
+it('can get upcoming fixtures by tv station id', function () {
+    expect(football()->fixture()->upcomingByTvStationId(
+        id: 1
+    ))->toBeInstanceOf(Response::class);
+});
+
+it('can get past fixtures by tv station id', function () {
+    expect(football()->fixture()->pastByTvStationId(
+        id: 1
+    ))->toBeInstanceOf(Response::class);
+});

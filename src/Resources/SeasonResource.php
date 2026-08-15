@@ -22,10 +22,24 @@ class SeasonResource extends BaseResource
         );
     }
 
+    public function byTeamId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/seasons/teams/{$id}"
+        );
+    }
+
     public function searchByName(string $search): array|Collection|Response|ResponseDto
     {
         return $this->get(
             url: "football/seasons/search/{$search}"
+        );
+    }
+
+    public function bracketsBySeasonId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/seasons/{$id}/brackets"
         );
     }
 }

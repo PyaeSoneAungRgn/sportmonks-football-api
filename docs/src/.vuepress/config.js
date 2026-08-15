@@ -89,6 +89,9 @@ module.exports = {
             'regions',
             'cities',
             'types',
+            'filters',
+            'timezones',
+            'my-sportmonks',
           ]
         },
         {
@@ -104,6 +107,7 @@ module.exports = {
             'stages',
             'rounds',
             'standings',
+            'statistics',
             'topscorers',
             'teams',
             'team-squads',
@@ -111,16 +115,23 @@ module.exports = {
             'coaches',
             'referees',
             'transfers',
+            'transfer-rumours',
             'venues',
             'tv-stations',
             'predictions',
+            'expected',
+            'premium-expected-lineups',
             'pre-match-odds',
             'inplay-odds',
+            'premium-odds',
             'markets',
             'bookmakers',
             'news',
             'rivals',
-            'commentaries'
+            'commentaries',
+            'match-facts',
+            'team-rankings',
+            'team-of-the-week'
           ]
         }
       ],

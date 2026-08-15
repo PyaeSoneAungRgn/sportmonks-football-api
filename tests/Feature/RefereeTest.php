@@ -23,3 +23,9 @@ it('can get referees by search by name', function () {
         search: 'Messi'
     ))->toBeInstanceOf(Response::class);
 });
+
+it('can get referees by season id', function () {
+    expect(football()->referee()->bySeasonId(
+        id: 718
+    ))->toBeInstanceOf(Response::class);
+});

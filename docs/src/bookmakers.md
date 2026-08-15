@@ -31,3 +31,19 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::bookmaker()->byFixtureId($fixtureId);
 ```
+
+## GET All Premium Bookmakers
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::bookmaker()->premium();
+```
+
+## GET Bookmaker Match ID Mappings by Fixture ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::bookmaker()->matchIdMappingsByFixtureId($fixtureId);
+```

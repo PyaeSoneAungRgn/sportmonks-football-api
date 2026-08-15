@@ -35,4 +35,25 @@ class PredictionResource extends BaseResource
             url: 'football/predictions/value-bets'
         );
     }
+
+    public function valueBetsByFixtureId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/predictions/value-bets/fixtures/{$id}"
+        );
+    }
+
+    public function liveProbabilities(): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: 'football/predictions/live/probabilities'
+        );
+    }
+
+    public function liveProbabilitiesByFixtureId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/predictions/live/probabilities/fixtures/{$id}"
+        );
+    }
 }

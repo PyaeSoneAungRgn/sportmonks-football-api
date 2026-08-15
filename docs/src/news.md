@@ -23,3 +23,19 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::news()->preMatchNewsForUpcomingFixtures($seasonId);
 ```
+
+## GET Post-Match News
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::news()->postMatchNews();
+```
+
+## GET Post-Match News by Season ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::news()->postMatchNewsBySeasonId($seasonId);
+```

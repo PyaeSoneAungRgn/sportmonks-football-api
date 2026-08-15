@@ -23,3 +23,13 @@ it('can get bookmakers by fixture id', function () {
         id: 10336114
     ))->toBeInstanceOf(Response::class);
 });
+
+it('can get all premium bookmakers', function () {
+    expect(football()->bookmaker()->premium())->toBeInstanceOf(Response::class);
+});
+
+it('can get bookmaker match id mappings by fixture id', function () {
+    expect(football()->bookmaker()->matchIdMappingsByFixtureId(
+        id: 10336114
+    ))->toBeInstanceOf(Response::class);
+});

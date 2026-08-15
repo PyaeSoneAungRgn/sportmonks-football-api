@@ -14,4 +14,11 @@ class RivalResource extends BaseResource
             url: 'football/rivals'
         );
     }
+
+    public function byTeamId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/rivals/teams/{$id}"
+        );
+    }
 }

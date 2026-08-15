@@ -31,3 +31,27 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::prediction()->valueBets();
 ```
+
+## GET Value Bets by Fixture ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::prediction()->valueBetsByFixtureId($fixtureId);
+```
+
+## GET Live Probabilities
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::prediction()->liveProbabilities();
+```
+
+## GET Live Probabilities by Fixture ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::prediction()->liveProbabilitiesByFixtureId($fixtureId);
+```

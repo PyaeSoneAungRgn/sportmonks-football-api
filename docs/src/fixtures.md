@@ -72,6 +72,22 @@ use SportmonksFootballApi;
 SportmonksFootballApi::fixture()->upcomingByMarketId($marketId);
 ```
 
+## GET Upcoming Fixtures by TV Station ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::fixture()->upcomingByTvStationId($tvStationId);
+```
+
+## GET Past Fixtures by TV Station ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::fixture()->pastByTvStationId($tvStationId);
+```
+
 ## GET Fixture by Last Updated Fixtures
 
 ```php

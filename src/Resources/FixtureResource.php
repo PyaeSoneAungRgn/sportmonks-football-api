@@ -73,6 +73,20 @@ class FixtureResource extends BaseResource
         );
     }
 
+    public function upcomingByTvStationId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/fixtures/upcoming/tv-stations/{$id}"
+        );
+    }
+
+    public function pastByTvStationId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/fixtures/past/tv-stations/{$id}"
+        );
+    }
+
     public function lastUpdated(): array|Collection|Response|ResponseDto
     {
         return $this->get(

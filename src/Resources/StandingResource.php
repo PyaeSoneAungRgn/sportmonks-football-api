@@ -42,4 +42,11 @@ class StandingResource extends BaseResource
             url: "football/standings/live/leagues/{$id}"
         );
     }
+
+    public function groupedByRoundId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/standings/rounds/{$id}/grouped"
+        );
+    }
 }

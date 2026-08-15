@@ -14,6 +14,18 @@ it('can get season by id', function () {
 
 it('can get season by search by name', function () {
     expect(football()->season()->searchByName(
-        search: '2022'
+        search: 'Premier'
+    ))->toBeInstanceOf(Response::class);
+});
+
+it('can get seasons by team id', function () {
+    expect(football()->season()->byTeamId(
+        id: 1
+    ))->toBeInstanceOf(Response::class);
+});
+
+it('can get brackets by season id', function () {
+    expect(football()->season()->bracketsBySeasonId(
+        id: 1
     ))->toBeInstanceOf(Response::class);
 });

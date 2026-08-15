@@ -29,3 +29,9 @@ it('can get standing correction by league id', function () {
         id: 2
     ))->toBeInstanceOf(Response::class);
 });
+
+it('can get grouped standings by round id', function () {
+    expect(football()->standing()->groupedByRoundId(
+        id: 1
+    ))->toBeInstanceOf(Response::class);
+});

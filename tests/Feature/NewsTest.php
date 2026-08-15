@@ -15,3 +15,13 @@ it('can get pre-matches news by season id', function () {
 it('can get pre-matches news for upcoming fixtures', function () {
     expect(football()->news()->preMatchNewsForUpcomingFixtures())->toBeInstanceOf(Response::class);
 });
+
+it('can get post-match news', function () {
+    expect(football()->news()->postMatchNews())->toBeInstanceOf(Response::class);
+});
+
+it('can get post-match news by season id', function () {
+    expect(football()->news()->postMatchNewsBySeasonId(
+        id: 718
+    ))->toBeInstanceOf(Response::class);
+});

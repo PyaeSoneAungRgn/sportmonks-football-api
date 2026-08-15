@@ -29,6 +29,13 @@ class RefereeResource extends BaseResource
         );
     }
 
+    public function bySeasonId(int|string $id): array|Collection|Response|ResponseDto
+    {
+        return $this->get(
+            url: "football/referees/seasons/{$id}"
+        );
+    }
+
     public function searchByName(string $search): array|Collection|Response|ResponseDto
     {
         return $this->get(

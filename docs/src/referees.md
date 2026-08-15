@@ -31,3 +31,11 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::referee()->searchByName($name);
 ```
+
+## GET Referees by Season ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::referee()->bySeasonId($seasonId);
+```

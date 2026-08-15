@@ -23,3 +23,11 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::market()->search($name);
 ```
+
+## GET All Premium Markets
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::market()->premium();
+```

@@ -39,3 +39,11 @@ use SportmonksFootballApi;
 
 SportmonksFootballApi::standing()->liveStandingsByLeagueId($leagueId);
 ```
+
+## Get Grouped Standings by Round ID
+
+```php
+use SportmonksFootballApi;
+
+SportmonksFootballApi::standing()->groupedByRoundId($roundId);
+```

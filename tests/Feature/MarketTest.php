@@ -17,3 +17,7 @@ it('can search markets', function () {
         name: 'bet'
     ))->toBeInstanceOf(Response::class);
 });
+
+it('can get all premium markets', function () {
+    expect(football()->market()->premium())->toBeInstanceOf(Response::class);
+});
