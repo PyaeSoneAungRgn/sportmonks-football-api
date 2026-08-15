@@ -2,6 +2,27 @@
 
 All notable changes to `sportmonks-football-api` will be documented in this file.
 
+## v3.3.1 - 2026-08-15
+
+**Full Changelog**: https://github.com/PyaeSoneAungRgn/sportmonks-football-api/compare/v3.3.0...v3.3.1
+
+## v3.3.0 - 2026-08-15
+
+### v3.3.0
+
+#### Added
+
+- `fixture()`: `upcomingByTvStationId()`, `pastByTvStationId()`
+- `season()`: `byTeamId()`, `bracketsBySeasonId()`
+- `standing()`: `groupedByRoundId()`
+- `referee()`: `bySeasonId()`
+- `prediction()`: `valueBetsByFixtureId()`, `liveProbabilities()`, `liveProbabilitiesByFixtureId()`
+- `market()`: `premium()`
+- `bookmaker()`: `premium()`, `matchIdMappingsByFixtureId()`
+- `news()`: `postMatchNews()`, `postMatchNewsBySeasonId()`
+- `rival()`: `byTeamId()`
+- New resources: `statistics()`, `transferRumour()`, `matchFact()`, `teamRanking()`, `teamOfTheWeek()`, `expected()`, `premiumExpectedLineup()`, `premiumOdd()`, `filter()`, `timezone()`, `my()`
+
 ## v3.2.1 - 2026-03-18
 
 ### What's Changed
