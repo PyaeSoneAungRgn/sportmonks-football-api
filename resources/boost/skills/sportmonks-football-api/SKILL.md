@@ -1,5 +1,5 @@
 ---
-name: sportmonks-football-api-usage
+name: sportmonks-football-api
 description: Work with the Sportmonks Football Api package — a Laravel wrapper for the Sportmonks Football API v3. Covers installation, configuration, accessing resources, request options, and response handling.
 ---
 
