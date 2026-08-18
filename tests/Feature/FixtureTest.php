@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Client\Response;
+use Illuminate\Support\Facades\Http;
 
 it('can get all fixtures', function () {
     expect(football()->fixture()->all())->toBeInstanceOf(Response::class);
@@ -72,4 +73,41 @@ it('can get past fixtures by tv station id', function () {
     expect(football()->fixture()->pastByTvStationId(
         id: 1
     ))->toBeInstanceOf(Response::class);
+});
+
+it('can get fixtures with cursor based pagination', function () {
+    expect(football()->fixture()
+        ->setCursor('WzEsMixbMTk3MTAxMDBdLFtbInNwb3J0cy5maXh0dXJlcy5pZCIsMV1dXQ')
+        ->all()
+    )->toBeInstanceOf(Response::class);
+});
+
+it('extracts the cursor token when next_cursor is a full url', function () {
+    football()->fixture()
+        ->setCursor('https://api.sportmonks.com/v3/football/fixtures?include=state&cursor=WzEsNTAsWzUwXSxbWyJzcG9ydHMuZml4dHVyZXMuaWQiLDBdXV0')
+        ->all();
+
+    Http::assertSent(fn ($request) => $request['cursor'] === 'WzEsNTAsWzUwXSxbWyJzcG9ydHMuZml4dHVyZXMuaWQiLDBdXV0');
+});
+
+it('drops per_page and page when a cursor is set', function () {
+    football()->fixture()
+        ->setPerPage(25)
+        ->setCursor('WzEsMixbMTk3MTAxMDBdLFtbInNwb3J0cy5maXh0dXJlcy5pZCIsMV1dXQ')
+        ->all();
+
+    Http::assertSent(function ($request) {
+        return $request['cursor'] === 'WzEsMixbMTk3MTAxMDBdLFtbInNwb3J0cy5maXh0dXJlcy5pZCIsMV1dXQ'
+            && ! isset($request['per_page'])
+            && ! isset($request['page']);
+    });
+});
+
+it('drops the cursor when per_page or page is set afterwards', function () {
+    football()->fixture()
+        ->setCursor('WzEsMixbMTk3MTAxMDBdLFtbInNwb3J0cy5maXh0dXJlcy5pZCIsMV1dXQ')
+        ->setPage(2)
+        ->all();
+
+    Http::assertSent(fn ($request) => $request['page'] === 2 && ! isset($request['cursor']));
 });
