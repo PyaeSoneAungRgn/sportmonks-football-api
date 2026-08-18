@@ -25,6 +25,8 @@ $fixtures->pagination()->count; // 25
 $fixtures->pagination()->per_page; // 25
 $fixtures->pagination()->current_page; // 1
 $fixtures->pagination()->next_page; // https://api.sportmonks.com/v3/football/fixtures?timezone=UTC&page=2"
+$fixtures->pagination()->next_cursor; // https://api.sportmonks.com/v3/football/fixtures?include=state&cursor=WzEsNTAsWzUwXSxbWyJzcG9ydHMuZml4dHVyZXMuaWQiLDBdXV0
+$fixtures->pagination()->has_more; // true
 ```
 
 ## Laravel Command Example

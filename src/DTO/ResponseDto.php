@@ -43,6 +43,7 @@ class ResponseDto
      *     per_page: int|null,
      *     current_page: int|null,
      *     next_page: string|null,
+     *     next_cursor: string|null,
      *     has_more: bool|null,
      * }
      */
@@ -53,6 +54,7 @@ class ResponseDto
             'per_page' => $this->response->json('pagination.per_page'),
             'current_page' => $this->response->json('pagination.current_page'),
             'next_page' => $this->response->json('pagination.next_page'),
+            'next_cursor' => $this->response->json('pagination.next_cursor'),
             'has_more' => $this->response->json('pagination.has_more'),
         ];
     }

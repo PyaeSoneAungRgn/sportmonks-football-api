@@ -4,8 +4,10 @@ namespace PyaeSoneAung\SportmonksFootballApi\Resources;
 
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Traits\Conditionable;
 use PyaeSoneAung\SportmonksFootballApi\DTO\ResponseDto;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanOrder;
+use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetCursor;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetFilter;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetInclude;
 use PyaeSoneAung\SportmonksFootballApi\Resources\Concerns\CanSetPage;
@@ -17,7 +19,7 @@ use PyaeSoneAung\SportmonksFootballApi\SportmonksFootballApi;
 
 class BaseResource
 {
-    use CanOrder, CanSetFilter, CanSetInclude, CanSetPage, CanSetPerPage, CanSetSelect, CanSetSortBy, WithQuery;
+    use CanOrder, CanSetCursor, CanSetFilter, CanSetInclude, CanSetPage, CanSetPerPage, CanSetSelect, CanSetSortBy, Conditionable, WithQuery;
 
     protected $query = [];
 
